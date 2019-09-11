@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+<link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<h2 class="top">Parallel Coordinates for Ground truth</h2>
+	<div class="buttons">
+		<button class="button" onclick="setFrameTo(0)">|V| = 7</button>
+		<button class="button" onclick="setFrameTo(1)">|V| = 8</button>
+		<button class="button" onclick="setFrameTo(2)">|V| = 9</button>
+		<button class="button" onclick="setFrameTo(3)">|v| = 10</button>
+	</div>
+	<div class="white">
+		<br>
+		<iframe class="iframe" id="section" src="g7.html" width= 100%
+			height=1000></iframe>
+	</div>
+	<script>
+		var x = [];
+		x[0] = "g7.html";
+		x[1] = "g8.html";
+		x[2] = "g9.html";
+		x[3] = "g10.html";
+
+		function setFrameTo(number) {
+			var frame = document.getElementById("section");
+			frame.src = x[number];
+		}
+	</script>
+</body>
+</html>
